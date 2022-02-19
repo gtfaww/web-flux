@@ -1,0 +1,4 @@
+com\vcom\controller\GoodsController.class
+com\vcom\bean\Goods.class
+com\vcom\service\GoodsService.class
+com\vcom\GoodsServiceServlet.class

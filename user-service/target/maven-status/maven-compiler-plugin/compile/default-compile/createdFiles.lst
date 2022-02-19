@@ -1,0 +1,11 @@
+com\binecy\bean\User.class
+com\binecy\controller\UserController.class
+com\binecy\config\RedisConfig$1.class
+com\binecy\controller\CacheController.class
+com\binecy\bean\Rights.class
+com\binecy\service\UserService.class
+com\binecy\UserServiceReactive.class
+com\binecy\consumer\RightsStreamConsumer.class
+com\binecy\config\RedisConfig.class
+com\binecy\service\CacheService.class
+com\binecy\consumer\RightsStreamConsumer$StreamMessageListener.class

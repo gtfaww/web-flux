@@ -1,0 +1,29 @@
+package com.vcom.controller;
+
+import com.vcom.service.CacheService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.concurrent.ExecutionException;
+
+@RestController
+@RequestMapping("/cache")
+public class CacheController {
+    private static final Logger logger = LoggerFactory.getLogger(CacheController.class);
+
+    @Autowired
+    private CacheService cacheService;
+
+    @GetMapping("/{key}")
+    public String get(@PathVariable String key) {
+        return cacheService.get(key);
+    }
+
+
+    @GetMapping("/guava/{key}")
+    public String getInGuava(@PathVariable String key) throws ExecutionException {
+        return cacheService.getInGuava(key);
+    }
+}
